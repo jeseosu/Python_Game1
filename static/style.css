@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #2d3436;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+p.subtitle {
+    color: #636e72;
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.btn {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #5b4bc4;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* кнопки відповідей */
+.option-btn {
+    background-color: #f8f9fa;
+    color: #2d3436;
+    border: 2px solid #e9ecef;
+    text-align: left;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    font-weight: normal;
+    min-height: 48px;
+}
+
+.option-btn:hover {
+    background-color: #e8f0fe;
+    border-color: #6c5ce7;
+    color: #6c5ce7;
+}
+
+/*оформлення блоку картинки результату */
+.image-wrapper {
+    min-height: 200px;
+    background-color: #f1f2f6;
+    border: 2px dashed #b2bec3;
+    border-radius: 10px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meme-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.progress-bar {
+    font-size: 13px;
+    color: #a4b0be;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
+/* ===== додано при інтеграції з бекендом ===== */
+h1 { font-family: 'Unbounded', 'Segoe UI', sans-serif; font-weight: 900; line-height: 1.15; }
+h2 { font-size: 16px; color: #2d3436; margin-bottom: 12px; }
+p.small { font-size: 13px; margin: 14px 0 0; }
+.emoji-wall { font-size: 28px; letter-spacing: 6px; margin-bottom: 22px; }
+
+.btn-secondary { background-color: #f8f9fa; color: #2d3436; border: 2px solid #e9ecef; }
+.btn-secondary:hover { background-color: #e8f0fe; color: #6c5ce7; border-color: #6c5ce7; }
+.btn:focus-visible { outline: 3px solid #fdcb6e; outline-offset: 2px; }
+
+.track { height: 8px; background: #e9ecef; border-radius: 99px; margin-bottom: 12px; overflow: hidden; }
+.track-fill { height: 100%; width: 0; background: #6c5ce7; transition: width .3s ease; }
+
+.spinner { font-size: 64px; animation: spin 1s linear infinite; margin: 20px 0 10px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.image-wrapper { border-style: solid; border-color: #2d3436; }
+.result-emoji { font-size: 96px; line-height: 1; padding: 20px 0; }
+.match { display: inline-block; background: #2d3436; color: #fff; font-weight: 700; font-size: 13px; padding: 3px 12px; border-radius: 99px; margin-bottom: 10px; }
+.tagline { font-weight: 700; color: #2d3436; margin-bottom: 8px; }
+.rarity { font-weight: 700; color: #6c5ce7; margin-bottom: 20px; font-size: 14px; }
+
+.block { text-align: left; background: #f8f9fa; border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+.bar-row { display: grid; grid-template-columns: 110px 1fr 42px; gap: 10px; align-items: center; margin-bottom: 8px; font-size: 14px; color: #2d3436; }
+.bar { height: 10px; background: #e9ecef; border-radius: 99px; overflow: hidden; }
+.bar > i { display: block; height: 100%; width: 0; background: #6c5ce7; transition: width .7s ease; }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
